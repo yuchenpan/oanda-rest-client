@@ -1,10 +1,9 @@
 package com.yuchen.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.joda.JodaModule;
+import com.yuchen.model.connection.OANDAConnection;
 import com.yuchen.model.instrument.Instrument;
 import com.yuchen.model.instrument.candle.Candles;
-import com.yuchen.model.connection.OANDAConnection;
 import com.yuchen.util.Endpoints;
 import com.yuchen.util.QueryParameter;
 import com.yuchen.util.URIBuilder;
@@ -20,13 +19,12 @@ public class InstrumentService {
     private static final HttpClient HTTP_CLIENT = HttpClient.newHttpClient();
 
     private final OANDAConnection oandaConnection;
-    private final ObjectMapper objectMapper;
+    private final ObjectMapper jsonMapper;
 
-    public InstrumentService(OANDAConnection oandaConnection)
+    InstrumentService(OANDAConnection oandaConnection, ObjectMapper jsonMapper)
     {
         this.oandaConnection = oandaConnection;
-        this.objectMapper = new ObjectMapper();
-        this.objectMapper.registerModule(new JodaModule());
+        this.jsonMapper = jsonMapper;
     }
 
     public Candles candles(Instrument instrument, List<QueryParameter> parameters) {
@@ -42,7 +40,7 @@ public class InstrumentService {
 
         try {
             HttpResponse<String> response = HTTP_CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
-            return objectMapper.readValue(response.body(), Candles.class);
+            return jsonMapper.readValue(response.body(), Candles.class);
         } catch (InterruptedException | IOException e)
         {
             throw new RuntimeException(e);
