@@ -1,4 +1,4 @@
-package com.yuchen.model.instrument.candle;
+package com.yuchen.rest.model.instrument.candle;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.joda.time.DateTime;

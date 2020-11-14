@@ -1,8 +1,8 @@
-package com.yuchen.service;
+package com.yuchen.rest.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.joda.JodaModule;
-import com.yuchen.model.connection.OANDAConnection;
+import com.yuchen.rest.model.connection.OANDAConnection;
 
 public class ServiceFactory {
     private final OANDAConnection oandaConnection;

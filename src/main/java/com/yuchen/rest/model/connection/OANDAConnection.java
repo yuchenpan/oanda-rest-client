@@ -1,4 +1,4 @@
-package com.yuchen.model.connection;
+package com.yuchen.rest.model.connection;
 
 public record OANDAConnection(API api, String apiToken) {
 }

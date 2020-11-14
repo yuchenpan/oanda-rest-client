@@ -1,4 +1,4 @@
-package com.yuchen.model.instrument;
+package com.yuchen.rest.model.instrument;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 

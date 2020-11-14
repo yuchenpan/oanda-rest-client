@@ -1,4 +1,4 @@
-package com.yuchen.util;
+package com.yuchen.rest.util;
 
 import java.net.URI;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.yuchen.model.connection;
+package com.yuchen.rest.model.connection;
 
 public enum API {
     TRADE("https://api-fxtrade.oanda.com/"),

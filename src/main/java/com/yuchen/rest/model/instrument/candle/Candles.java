@@ -1,7 +1,7 @@
-package com.yuchen.model.instrument.candle;
+package com.yuchen.rest.model.instrument.candle;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.yuchen.model.instrument.Instrument;
+import com.yuchen.rest.model.instrument.Instrument;
 
 import java.util.List;
 

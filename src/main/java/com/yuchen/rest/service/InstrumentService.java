@@ -1,12 +1,12 @@
-package com.yuchen.service;
+package com.yuchen.rest.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.yuchen.model.connection.OANDAConnection;
-import com.yuchen.model.instrument.Instrument;
-import com.yuchen.model.instrument.candle.Candles;
-import com.yuchen.util.Endpoints;
-import com.yuchen.util.QueryParameter;
-import com.yuchen.util.URIBuilder;
+import com.yuchen.rest.model.connection.OANDAConnection;
+import com.yuchen.rest.model.instrument.Instrument;
+import com.yuchen.rest.model.instrument.candle.Candles;
+import com.yuchen.rest.util.Endpoints;
+import com.yuchen.rest.util.QueryParameter;
+import com.yuchen.rest.util.URIBuilder;
 
 import java.io.IOException;
 import java.net.URI;

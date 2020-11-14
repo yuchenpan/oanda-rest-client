@@ -1,6 +1,6 @@
-package com.yuchen.util;
+package com.yuchen.rest.util;
 
-import com.yuchen.model.instrument.Instrument;
+import com.yuchen.rest.model.instrument.Instrument;
 
 public class Endpoints {
     private static final String CANDLES_ENDPOINT = "v3/instruments/%s/candles";

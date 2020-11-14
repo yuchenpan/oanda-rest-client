@@ -1,4 +1,4 @@
-package com.yuchen.util;
+package com.yuchen.rest.util;
 
 public record QueryParameter(String name, String value) {
     public static QueryParameter of(String name, String value)
