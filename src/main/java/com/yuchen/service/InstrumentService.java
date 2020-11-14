@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.joda.JodaModule;
 import com.yuchen.model.instrument.Instrument;
 import com.yuchen.model.instrument.candle.Candles;
-import com.yuchen.model.instrument.connection.OANDAConnection;
+import com.yuchen.model.connection.OANDAConnection;
 import com.yuchen.util.Endpoints;
 import com.yuchen.util.QueryParameter;
 import com.yuchen.util.URIBuilder;
