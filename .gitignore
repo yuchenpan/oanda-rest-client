@@ -24,3 +24,6 @@ hs_err_pid*
 
 # Intellij files
 .idea
+
+# Secrets
+src/test/resources/test-secrets.properties
