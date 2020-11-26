@@ -13,9 +13,9 @@ public class IntegrationTestProperties {
     private static final Properties properties = loadProperties();
 
     public static final String API_TOKEN = properties.getProperty("TEST_API_TOKEN");
+    public static final String TEST_ACCOUNT_ID = properties.getProperty("TEST_ACCOUNT_ID");
 
-    public static Properties loadProperties()
-    {
+    public static Properties loadProperties() {
         InputStream in = IntegrationTestProperties.class.getClassLoader().getResourceAsStream(PROPERTIES_FILE);
 
         Properties props = new Properties();

@@ -22,7 +22,7 @@ class InstrumentServiceIntegrationTest {
     }
 
     @Test
-    void candlesWithParameters_correctInstrumentWithCorrectData() {
+    void candles_withParameters_correctInstrumentWithCorrectData() {
         Candles candles = testSubject.candles(Instrument.EURUSD,
                 parameters(QueryParameter.candlestickGranularity(H1), QueryParameter.count(5)));
 
